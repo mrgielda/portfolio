@@ -272,6 +272,7 @@ header > div > h2 {
 	background-color: #213b50;
     margin-right: 20px;
     margin-top: 80px;
+    margin-bottom: 50px;
 
 }  
 
@@ -284,13 +285,23 @@ header > div > h2 {
 }
 
 #fb:hover{
-    background-color: #1f1fe8;
+    background-color: #3b5998;
 }
 
 #gp:hover{
-    background-color: #c12d00;
+    background-color: #d34836;
 }
 
 #tw:hover{
-    background-color: #2121f2;
+    background-color: #00aced;
+}
+#in:hover{
+    background-color: #4875B4;
+}
+
+footer{
+    background-color: #08081f;
+    color: #fff;
+    margin: 0;
+    padding: 5px 60px;
 }
