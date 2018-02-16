@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    padding: 0;
+}
+
+/*nav start*/
+
+#main-nav {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    top: 0;
+    z-index: 999;
+    line-height: 70px;
+    background-color: #fff;
+}
+
+
+#main-nav a {
+    text-decoration: none;
+    color: #1ac056;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+/*nav-koniec*/
+
+/*header start*/
+
+header {
+    background-image: url("../img/header-background.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+header > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%)
+}
+
+header > div > h1 {
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+header > div > h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/*header koniec*/
+
+/*O mnie start*/
+
+#omnie {
+    padding: 40px 60px;
+    background-color: #f9fcfe;
+    -webkit-box-shadow: 0px 10px 5px 1px rgba(230, 225, 230, 1);
+    -moz-box-shadow: 0px 10px 5px 1px rgba(230, 225, 230, 1);
+    box-shadow: 0px 10px 5px 1px rgba(230, 225, 230, 1);
+}
+
+#omnie > h2,
+#umiejetnosci > h2,
+#mojeportfolio > h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 0;
+
+}
+
+#omnie > figure {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    text-align: center;
+
+}
+
+#omnietekst {
+    display: inline-block;
+    width: 50%;
+    float: left;
+
+}
+
+#omnietekst > p {
+    margin: 0;
+}
+
+#omnie > figure > img {
+    width: 50%;
+    border: 15px solid #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/*O mnie koniec*/
+
+/*Umiejetnosci start*/
+
+#umiejetnosci {
+    padding: 60px;
+}
+
+#umiejetnoscitekst > p {
+    text-align: center;
+
+}
+
+#ikony {
+    text-align: center;
+}
+
+#ikony > figure {
+    display: inline-block;
+
+}
+
+#ikony > figure > figcaption {
+    margin: 20px;
+
+
+}
+
+#mojeportfolio {
+    padding: 60px;
+
+
+}
+
+#portfolio1 {
+    background-image: url("../img/portfolio1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio2 {
+    background-image: url("../img/portfolio2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#portfolio3 {
+    background-image: url("../img/portfolio4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio1,
+#portfolio2,
+#portfolio3 {
+    height: 480px;
+    display: inline-block;
+    width: 33%;
+    float: left;
+    margin-bottom: 60px;
+
+
+}
+
+.overlay {
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+#ramka {
+    height: 100%;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+
+}
+
+#tresc {
+    padding: 10px;
+
+}
+
+#mojeportfolio p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+#tresc > h3 {
+    color: #fff;
+    font-size: 25px;
+}
+
+#about:hover,
+#skills:hover,
+#portf:hover,
+#contact:hover {
+    color: #004d00;
+}
+
+.clear {
+    clear: both;
+}
+
+#kontakt {
+    background-color: #213b50;
+
+}
+
+#kontakt {
+    padding: 20px 60px;
+}
+
+#kontakt h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#kontakt address {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    
+}
+
+#kontakt address a{
+    color: #1ac056;
+}
+#kontakt address a:hover{
+    color: #ccc;
+}
+
+.social-media a {
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #213b50;
+    margin-right: 20px;
+    margin-top: 80px;
+
+}  
+
+.social-media a .fa {
+	line-height: 50px;
+}
+
+.fa{
+    color: white;
+}
+
+#fb:hover{
+    background-color: #1f1fe8;
+}
+
+#gp:hover{
+    background-color: #c12d00;
+}
+
+#tw:hover{
+    background-color: #2121f2;
+}
