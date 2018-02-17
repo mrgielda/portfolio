@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
+
 
 </head>
 
@@ -101,25 +101,39 @@
             <h2>Mateusz<span> Giełżecki</span></h2>
             <address>ul.Mostowa 6/13<br>31-061 Kraków<br><br>tel: 606 74 57 59<br>email:<a href="mailto:mrgielda@gmail.com"> mrgielda@gmail.com</a>.<br>
             </address>
-            
+
             <div class="social-media">
-				<a href="http://facebook.com" id="fb">
+                <a href="http://facebook.com" id="fb">
 					<i class="fa fa-facebook fa-2x"></i>
 				</a>
-				<a href="https://plus.google.com" id="gp">
+                <a href="https://plus.google.com" id="gp">
 					<i class="fa fa-google-plus fa-2x"></i>
 				</a>
-				<a href="https://twitter.com" id="tw">
+                <a href="https://twitter.com" id="tw">
 					<i class="fa fa-twitter fa-2x"></i>
 				</a>
-				<a href="https://pl.linkedin.com" id="in">
+                <a href="https://pl.linkedin.com" id="in">
 					<i class="fa fa-linkedin fa-2x"></i>
 				</a>
-			</div>
+            </div>
         </div>
-        <div id="formularz"></div>
+        <form>
+            <div class="formularz">
+
+                <input type="text" class="wpis" name="nazwa" id="nazwa" placeholder="Imię i nazwisko"/>
+
+                <input type="text" class="wpis" name="email" id="email" placeholder="E-mail" />
+
+                <textarea class="wiadomosc" name="wiadomosc" id="wiad" placeholder="Treść wiadomości"></textarea>
+
+                <input type="button" class="button" value="Wyślij" />
+
+            </div>
+        </form>
+        
+        <div class="clear"></div>
     </section>
-    
+
     <footer>
         <p>Copyright &copy Mateusz Giełżecki</p>
     </footer>

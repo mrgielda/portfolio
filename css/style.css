@@ -236,6 +236,10 @@ header > div > h2 {
 
 }
 
+#adres{
+    width: 50%;
+    float:left;
+}
 #kontakt {
     padding: 20px 60px;
 }
@@ -305,3 +309,57 @@ footer{
     margin: 0;
     padding: 5px 60px;
 }
+
+form{
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+
+.wpis,
+.wiadomosc,
+.button{
+    display: block;
+    margin-top: 20px;
+    border: none;
+}
+
+.wiadomosc{
+    box-sizing: border-box;
+}
+
+.wpis,
+.wiadomosc{
+    padding: 15px 250px;
+    background-color: #08081f;
+    color: #fff;
+}
+
+.formularz{
+   padding: 60px 60px;
+      box-sizing: border-box;
+   
+}
+
+.button{
+    position: absolute;
+    right: 60px;
+    padding: 15px 50px;
+    border: 2px solid #fff;
+    background-color: limegreen;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+#wiad{
+  
+    padding: 15px 250px;
+}
+
+    
