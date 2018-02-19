@@ -1,13 +1,16 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
 
 section {
-    padding: 0;
+    padding: 70px 60px;
 }
 
-/*nav start*/
+/*NAV START*/
 
 #main-nav {
     position: fixed;
@@ -15,10 +18,9 @@ section {
     text-align: right;
     top: 0;
     z-index: 999;
-    line-height: 70px;
+    line-height: 30px;
     background-color: #fff;
 }
-
 
 #main-nav a {
     text-decoration: none;
@@ -29,9 +31,21 @@ section {
     margin-left: 70px;
 }
 
-/*nav-koniec*/
+#main-nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
 
-/*header start*/
+#about:hover,
+#skills:hover,
+#portf:hover,
+#contact:hover {
+    color: #004d00;
+}
+
+/*NAV KONIEC*/
+
+/*HEADER START*/
 
 header {
     background-image: url("../img/header-background.jpg");
@@ -39,15 +53,12 @@ header {
     position: relative;
     background-size: cover;
     background-position: center;
-
-
 }
 
 header > div {
     position: absolute;
     top: 50%;
     left: 50%;
-    text-align: center;
     transform: translate(-50%, -50%)
 }
 
@@ -56,6 +67,7 @@ header > div > h1 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 span {
@@ -70,12 +82,11 @@ header > div > h2 {
     font-weight: 300;
 }
 
-/*header koniec*/
+/*HEADER END*/
 
-/*O mnie start*/
+/*O MNIE START*/
 
 #omnie {
-    padding: 40px 60px;
     background-color: #f9fcfe;
     -webkit-box-shadow: 0px 10px 5px 1px rgba(230, 225, 230, 1);
     -moz-box-shadow: 0px 10px 5px 1px rgba(230, 225, 230, 1);
@@ -89,7 +100,6 @@ header > div > h2 {
     font-weight: 300;
     font-size: 30px;
     margin-top: 0;
-
 }
 
 #omnie > figure {
@@ -98,18 +108,6 @@ header > div > h2 {
     float: left;
     margin: 0;
     text-align: center;
-
-}
-
-#omnietekst {
-    display: inline-block;
-    width: 50%;
-    float: left;
-
-}
-
-#omnietekst > p {
-    margin: 0;
 }
 
 #omnie > figure > img {
@@ -117,21 +115,26 @@ header > div > h2 {
     border: 15px solid #fff;
 }
 
+#oMnieTekst {
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+
+#oMnieTekst > p {
+    margin: 0;
+}
+
 .clear {
     clear: both;
 }
 
-/*O mnie koniec*/
+/*O MNIE END*/
 
-/*Umiejetnosci start*/
-
-#umiejetnosci {
-    padding: 60px;
-}
+/*UMIEJETNOSCI START*/
 
 #umiejetnoscitekst > p {
     text-align: center;
-
 }
 
 #ikony {
@@ -145,68 +148,78 @@ header > div > h2 {
 
 #ikony > figure > figcaption {
     margin: 20px;
-
-
 }
 
-#mojeportfolio {
-    padding: 60px;
+/*UMIEJETNOSCI END*/
 
-
-}
+/*PORTFOLIO START*/
 
 #portfolio1 {
     background-image: url("../img/portfolio1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #portfolio2 {
     background-image: url("../img/portfolio2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 #portfolio3 {
     background-image: url("../img/portfolio4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #portfolio1,
 #portfolio2,
 #portfolio3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 480px;
     display: inline-block;
     width: 33%;
     float: left;
     margin-bottom: 60px;
-
-
 }
 
-.overlay {
+.mask {
     height: 100%;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     box-sizing: border-box;
+    opacity: 0;
+    position: relative;
+}
+
+.mask:hover {
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 #ramka {
     height: 100%;
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     box-sizing: border-box;
-
 }
 
-#tresc {
-    padding: 10px;
+div h3 {
+    color: #fff;
+    font-size: 25px;
+}
 
+#tresc1,
+#tresc2,
+#tresc3 {
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tresc1 .fa:hover,
+#tresc2 .fa:hover,
+#tresc3 .fa:hover {
+    transition: color 0.3s;
+    color: lime;
 }
 
 #mojeportfolio p {
@@ -215,33 +228,23 @@ header > div > h2 {
     font-size: 18px;
 }
 
-#tresc > h3 {
-    color: #fff;
-    font-size: 25px;
-}
-
-#about:hover,
-#skills:hover,
-#portf:hover,
-#contact:hover {
-    color: #004d00;
-}
-
 .clear {
     clear: both;
 }
+
+/*PORFTOLIO END*/
+
+/*KONTAKT START*/
 
 #kontakt {
     background-color: #213b50;
 
 }
 
-#adres{
+#adres {
     width: 50%;
-    float:left;
-}
-#kontakt {
-    padding: 20px 60px;
+    float: left;
+    font-style: normal;
 }
 
 #kontakt h2 {
@@ -256,110 +259,122 @@ header > div > h2 {
     font-weight: 300;
     margin-top: 80px;
     letter-spacing: 2px;
-    
+
 }
 
-#kontakt address a{
+#kontakt address a {
     color: #1ac056;
 }
-#kontakt address a:hover{
+
+#kontakt address a:hover {
     color: #ccc;
 }
 
 .social-media a {
-	text-decoration: none;
-	display: inline-block;
-	border: 1px solid #fff;
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	background-color: #213b50;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #213b50;
     margin-right: 20px;
     margin-top: 80px;
     margin-bottom: 50px;
+    text-align: center;
 
-}  
-
-.social-media a .fa {
-	line-height: 50px;
 }
 
-.fa{
+.social-media a .fa {
+    line-height: 50px;
+}
+
+.fa {
     color: white;
 }
 
-#fb:hover{
+#fb:hover {
     background-color: #3b5998;
 }
 
-#gp:hover{
+#gp:hover {
     background-color: #d34836;
 }
 
-#tw:hover{
+#tw:hover {
     background-color: #00aced;
 }
-#in:hover{
+
+#in:hover {
     background-color: #4875B4;
 }
 
-footer{
+.formularz {
+    padding: 60px 60px;
+
+}
+
+form {
+    float: right;
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.wpis,
+.wiadomosc,
+.button {
+    display: block;
+    margin-top: 20px;
+    border: none;
+}
+
+.wpis,
+.wiadomosc {
+    background-color: #08081f;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+
+#wiad {
+    height: 80px;
+}
+
+.button {
+    padding: 15px 50px;
+    border: 1px solid #fff;
+    background-color: limegreen;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    float: right;
+}
+
+.button:hover {
+
+    transition: background-color 0.5s;
+    background-color: #057705;
+}
+
+/*KONTAKT END*/
+
+/*FOOTER START*/
+
+footer {
     background-color: #08081f;
     color: #fff;
     margin: 0;
     padding: 5px 60px;
 }
 
-form{
-    display: inline-block;
-    position: relative;
-    float: right;
+/*FOOTER END*/
+
+
+#menu,
+.toggle{
+    display: none;
 }
-.clear{
-    clear: both;
 }
-
-
-.wpis,
-.wiadomosc,
-.button{
-    display: block;
-    margin-top: 20px;
-    border: none;
-}
-
-.wiadomosc{
-    box-sizing: border-box;
-}
-
-.wpis,
-.wiadomosc{
-    padding: 15px 250px;
-    background-color: #08081f;
-    color: #fff;
-}
-
-.formularz{
-   padding: 60px 60px;
-      box-sizing: border-box;
-   
-}
-
-.button{
-    position: absolute;
-    right: 60px;
-    padding: 15px 50px;
-    border: 2px solid #fff;
-    background-color: limegreen;
-    color: white;
-    font-weight: 900;
-    font-size: 20px;
-
-}
-
-#wiad{
-  
-    padding: 15px 250px;
-}
-
-    
